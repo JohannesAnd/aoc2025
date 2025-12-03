@@ -1,8 +1,16 @@
-package aoc2025
+package main
 
-import "aoc2025/day01"
+import (
+	"aoc2025/day01"
+	"aoc2025/day02"
+	"aoc2025/day03"
+)
 
 func main() {
 	day01.Part1()
 	day01.Part2()
+	day02.Part1()
+	day02.Part2()
+	day03.Part1()
+	day03.Part2()
 }

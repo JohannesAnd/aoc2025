@@ -2,7 +2,6 @@ package day02
 
 import (
 	"aoc2025/utils"
-	"fmt"
 	"strconv"
 	"strings"
 )
@@ -96,7 +95,6 @@ func Part2() int {
 	for _, d := range data {
 		for i := d.from; i <= d.to; i++ {
 			if isInvalidPart2(i) {
-				fmt.Println(i)
 				sum += i
 			}
 		}
