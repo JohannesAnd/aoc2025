@@ -11,8 +11,8 @@ type IdRange struct {
 	to   int
 }
 
-func getData() []IdRange {
-	lr, _ := utils.NewLineReader("day02.txt")
+func getData(inputPath string) []IdRange {
+	lr, _ := utils.NewLineReader(inputPath)
 
 	dataString, _ := lr.Next()
 
@@ -42,8 +42,8 @@ func isInvalidPart1(number int) bool {
 	return str[0:len(str)/2] == str[len(str)/2:]
 }
 
-func Part1() int {
-	data := getData()
+func Part1(inputPath string) int {
+	data := getData(inputPath)
 
 	sum := 0
 
@@ -78,7 +78,7 @@ func checkIsRepeating(pattern string, value string) bool {
 func isInvalidPart2(number int) bool {
 	str := strconv.Itoa(number)
 
-	for size := 1; size < len(str); size++ {
+	for size := 1; size < len(str)/2+1; size++ {
 		if checkIsRepeating(str[0:size], str) {
 			return true
 		}
@@ -87,8 +87,8 @@ func isInvalidPart2(number int) bool {
 	return false
 }
 
-func Part2() int {
-	data := getData()
+func Part2(inputPath string) int {
+	data := getData(inputPath)
 
 	sum := 0
 

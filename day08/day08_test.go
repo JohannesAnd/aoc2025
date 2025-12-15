@@ -1,4 +1,4 @@
-package day07
+package day08
 
 import (
 	"testing"
@@ -7,13 +7,13 @@ import (
 )
 
 func Test_part1(t *testing.T) {
-	result := Part1("day07.txt")
+	result := Part1("day08.txt")
 
 	assert.Equal(t, 1518, result)
 }
 
 func Test_part2(t *testing.T) {
-	result := Part2("day07.txt")
+	result := Part2("day08.txt")
 
 	assert.Equal(t, 25489586715621, result)
 }

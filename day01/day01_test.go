@@ -7,13 +7,13 @@ import (
 )
 
 func Test_part1(t *testing.T) {
-	result := Part1()
+	result := Part1("day01.txt")
 
 	assert.Equal(t, 1064, result)
 }
 
 func Test_part2(t *testing.T) {
-	result := Part2()
+	result := Part2("day01.txt")
 
 	assert.Equal(t, 6122, result)
 }

@@ -42,13 +42,13 @@ func Test_getValue_4(t *testing.T) {
 }
 
 func Test_part1(t *testing.T) {
-	result := Part1()
+	result := Part1("day04.txt")
 
 	assert.Equal(t, 1495, result)
 }
 
 func Test_part2(t *testing.T) {
-	result := Part2()
+	result := Part2("day04.txt")
 
 	assert.Equal(t, 8768, result)
 }

@@ -44,8 +44,8 @@ func findLargestNumberOfSize(str string, size int) int {
 	return result
 }
 
-func Part1() int {
-	lr, _ := utils.NewLineReader("day03.txt")
+func Part1(inputPath string) int {
+	lr, _ := utils.NewLineReader(inputPath)
 
 	result := 0
 
@@ -62,8 +62,8 @@ func Part1() int {
 	return result
 }
 
-func Part2() int {
-	lr, _ := utils.NewLineReader("day03.txt")
+func Part2(inputPath string) int {
+	lr, _ := utils.NewLineReader(inputPath)
 
 	result := 0
 

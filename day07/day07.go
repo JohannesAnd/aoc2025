@@ -90,8 +90,8 @@ func spawn2(data []byte, width int, y int, x int) int {
 	return res
 }
 
-func Part1() int {
-	data, _ := os.ReadFile("day07.txt")
+func Part1(inputPath string) int {
+	data, _ := os.ReadFile(inputPath)
 
 	width, _ := findFirstIndex(data, newline)
 	x, _ := findFirstIndex(data, start)
@@ -100,9 +100,9 @@ func Part1() int {
 	return spawn(data, width, y, x)
 }
 
-func Part2() int {
+func Part2(inputPath string) int {
 
-	data, _ := os.ReadFile("day07.txt")
+	data, _ := os.ReadFile(inputPath)
 
 	width, _ := findFirstIndex(data, newline)
 	x, _ := findFirstIndex(data, start)

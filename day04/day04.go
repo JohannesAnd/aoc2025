@@ -71,14 +71,14 @@ func getAccessible(data []byte) []int {
 	return result
 }
 
-func Part1() int {
-	data, _ := os.ReadFile("day04.txt")
+func Part1(inputPath string) int {
+	data, _ := os.ReadFile(inputPath)
 
 	return len(getAccessible(data))
 }
 
-func Part2() int {
-	data, _ := os.ReadFile("day04.txt")
+func Part2(inputPath string) int {
+	data, _ := os.ReadFile(inputPath)
 
 	removed := 0
 

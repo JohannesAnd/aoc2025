@@ -5,8 +5,8 @@ import (
 	"strconv"
 )
 
-func Part1() int {
-	lr, _ := utils.NewLineReader("day01.txt")
+func Part1(inputPath string) int {
+	lr, _ := utils.NewLineReader(inputPath)
 
 	position := 50
 	count := 0
@@ -34,8 +34,8 @@ func Part1() int {
 	return count
 }
 
-func Part2() int {
-	lr, _ := utils.NewLineReader("day01.txt")
+func Part2(inputPath string) int {
+	lr, _ := utils.NewLineReader(inputPath)
 
 	position := 50
 	count := 0

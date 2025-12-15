@@ -1,4 +1,4 @@
-package day01
+package day06
 
 import (
 	"aoc2025/utils"
@@ -25,8 +25,8 @@ func sumInts(input []int) int {
 	return sum
 }
 
-func Part1() int {
-	lines, _ := utils.ReadFile("day06.txt")
+func Part1(inputPath string) int {
+	lines, _ := utils.ReadFile(inputPath)
 
 	operators := strings.Fields(lines[len(lines)-1])
 	results := stringsToInts(strings.Fields(lines[0]))
@@ -78,8 +78,8 @@ func getColumnNumber(lines []string, index int) (int, error) {
 	return strconv.Atoi(res)
 }
 
-func Part2() int {
-	lines, _ := utils.ReadFile("day06.txt")
+func Part2(inputPath string) int {
+	lines, _ := utils.ReadFile(inputPath)
 
 	chunkIndecies := findNonSpaceIndecies(lines[len(lines)-1])
 

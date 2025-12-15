@@ -71,8 +71,8 @@ func createRange(str string) numberRange {
 	return numberRange{start: start, end: end}
 }
 
-func Part1() int {
-	lr, _ := utils.NewLineReader("day05.txt")
+func Part1(inputPath string) int {
+	lr, _ := utils.NewLineReader(inputPath)
 
 	count := 0
 	rangesDone := false
@@ -134,8 +134,8 @@ func Part1() int {
 	return count
 }
 
-func Part2() int {
-	lr, _ := utils.NewLineReader("day05.txt")
+func Part2(inputPath string) int {
+	lr, _ := utils.NewLineReader(inputPath)
 
 	ranges := make(map[numberRange]struct{}, 0)
 
